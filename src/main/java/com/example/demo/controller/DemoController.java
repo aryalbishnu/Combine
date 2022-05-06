@@ -18,7 +18,7 @@ public class DemoController {
 	model.addAttribute("user" ,new User());
 	return "register";
 	
-	
+	//ddddd
 }
 	@PostMapping("/doregister")
 	public String registerby(@Valid  User user, BindingResult result, Model model) {
