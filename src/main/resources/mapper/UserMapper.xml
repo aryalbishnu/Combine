@@ -5,8 +5,10 @@
   <mapper namespace="com.example.demo.mapper.UserMapper">
   
   <insert id="doinsert">
-  
-  
+  INSERT INTO public.combine(
+	id, username, email, password, city)
+	VALUES (#{id}, #{username}, #{email}, #{password}, #{city});
+ 
   
   </insert>
   
